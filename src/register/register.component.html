@@ -1,1 +1,47 @@
-<p>register works!</p>
+<!DOCTYPE html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <div class="background">
+    <img class="imageClass1" src="/assets/images/back2.jpg" alt="Login Image" />
+  </div>
+    <img
+      class="imageClasstop"
+      src="/assets/images/ballon1.png"
+      alt="Login Image"
+    />
+  <div class="register-container">
+    <h2 style="color: white; text-align: center">Register</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="What can we call you?" required />
+      <input type="date" placeholder="Date of Birth" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <input type="tel" placeholder="Contact Number" required />
+      <select required>
+        <option value="" disabled selected style="width: 100%">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <div style="margin-bottom: 9%"></div>
+      <button type="submit" (click)="onSubmit()">Register</button>
+      <div style="text-align: center">
+        <small id="emailHelp" style="color: rgb(95, 95, 243)">
+          Already have a account?
+          <a href="/login" style="color: rgb(95, 95, 243)">LOGIN HERE</a>
+        </small>
+      </div>
+      <div id="popup" class="popup" style="display: none">
+        <div class="popup-content">
+          <h3>Registration Successful</h3>
+          <p>Continue to <a href="/login">Login</a></p>
+          <button onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>

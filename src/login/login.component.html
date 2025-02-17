@@ -7,30 +7,32 @@
   />
 </head>
 <body>
-    <div class="background">
-        <img class="imageClass1" src="/assets/images/vacation2.jpg" alt="Login Image">
-    </div>
+  <div class="background">
+    <img
+      class="imageClass1"
+      src="/assets/images/back3.jpg"
+      alt="Login Image"
+    />
+  </div>
   <div class="left">
-    <div class="container" id="con1">
-      <div class="row">
-        <div class="col-md-6">
+    <div class="container1" style="border: 1px solid white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 2);">
+      <div class="container1">
+        <div style="margin-bottom: 13%;"></div>
+        <div style="color: white; text-align: center;">
           <h2>Login</h2>
           <form>
+            <div style="margin-bottom: 10%;"></div>
             <div class="form-group">
-              <label for="email">Email address</label>
               <input
-                type="email"
-                class="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
               />
-              <small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
             </div>
+            <div style="margin-bottom: 10%;"></div>
             <div class="form-group">
-              <label for="password">Password</label>
               <input
                 type="password"
                 class="form-control"
@@ -38,18 +40,62 @@
                 placeholder="Password"
               />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+              <div style="margin-bottom: 5%;"></div>
+              <div style="text-align: center;">
+                <div style="text-align: left;">
+                  <small>
+                    <a href="/forgot-password" style="color: rgb(67, 67, 70);">Forgot password</a>
+                  </small>
+                </div>
+              </div>
+            <div style="margin-bottom: 15%;"></div>
+            <div style="text-align: center;">
+              <button type="submit" style="width: 70%;" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+            </div>
+            <small style="color: rgb(171, 171, 245)">
+              Not a member? <a href="/register" >SIGN UP</a>
+            </small>
           </form>
         </div>
       </div>
     </div>
   </div>
   <div class="right">
-    <!-- <div class="container" id="con2"></div>
-    <div class="row">
-      <div class="col-md-6"> -->
-        <img class="imageClass" src="/assets/images/travel2.png" alt="Login Image">
-      </div>
-    <!-- </div>
-  </div> -->
+    <img
+      class="imageClasstop"
+      src="/assets/images/clo3.png"
+      alt="Login Image"
+    />
+    <img
+      class="imageClasstop" style="right: 55%;"
+      src="/assets/images/clo4.png"
+      alt="Login Image"
+    />
+    
+    <img
+      class="imageClass"
+      src="/assets/images/cou6.png"
+      alt="Login Image"
+    />
+    <img
+      class="imageClass" style="right: 25%;"
+      src="/assets/images/cou5.png"
+      alt="Login Image"
+    />
+    <img
+      class="imageClass" style="right: 45%;"
+      src="/assets/images/tra1.png"
+      alt="Login Image"
+    />
+    <img
+      class="imageClass" style="right: 65%; bottom: -4%;"
+      src="/assets/images/cou9.png"
+      alt="Login Image"
+    />
+    <img
+      class="imageClass" style="right: 85%;"
+      src="/assets/images/cou10.png"
+      alt="Login Image"
+    />
+  </div>
 </body>
