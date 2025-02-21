@@ -44,7 +44,7 @@
               <div style="text-align: center;">
                 <div style="text-align: left;">
                   <small>
-                    <a href="/forgot-password" style="color: rgb(67, 67, 70);">Forgot password</a>
+                    <a href="javascript:void(0);" (click)="openForgotPasswordModal()">Forgot password</a>
                   </small>
                 </div>
               </div>
@@ -59,6 +59,7 @@
         </div>
       </div>
     </div>
+    <app-forgot-password #forgotPassword></app-forgot-password>
   </div>
   <div class="right">
     <img
@@ -87,11 +88,11 @@
       src="/assets/images/tra1.png"
       alt="Login Image"
     />
-    <img
-      class="imageClass" style="right: 65%; bottom: -4%;"
+    <!-- <img
+      class="imageClass" style="right: 65%; width: 22%;"
       src="/assets/images/cou9.png"
       alt="Login Image"
-    />
+    /> -->
     <img
       class="imageClass" style="right: 85%;"
       src="/assets/images/cou10.png"

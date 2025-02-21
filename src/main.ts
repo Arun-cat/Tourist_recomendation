@@ -6,7 +6,6 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -15,7 +14,6 @@ bootstrapApplication(AppComponent, {
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'forgot-password', component: ForgotPasswordComponent },
     ]), provideAnimationsAsync(),
     MatDialogModule
   ]

@@ -10,4 +10,15 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrl: './pop-up.component.css'
 })
 export class PopUpComponent {
+  constructor(
+    private dialogRef: MatDialogRef<PopUpComponent>, 
+    private router: Router
+  ) {}
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.dialogRef.close(); // Close popup
+      this.router.navigate(['/login']); // Redirect to login page
+    }, 3000); // 3 seconds delay
+  }
 }
